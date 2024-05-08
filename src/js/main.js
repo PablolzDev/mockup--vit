@@ -6,6 +6,8 @@ import '../scss/style.scss'
 import * as bootstrap from 'bootstrap'
 
 
+
+
 const head = document.querySelector("header")
 
 head.innerHTML = `<div
@@ -33,9 +35,9 @@ class="d-flex flex-wrap align-items-center justify-content-center justify-conten
     src="https://pascualbravo.edu.co/wp-content/uploads/2023/06/cropped-Imagotipo-horizontal_acreditados.png"
     alt=""
   />
-  <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+  <li><a href="" class="nav-link px-2 link-secondary">Home</a></li>
   <li>
-    <a href="#" class="nav-link px-2 link-body-emphasis">Resultados</a>
+    <a href="./src/pages/results.html" class="nav-link px-2 link-body-emphasis">Resultados</a>
   </li>
 </ul>
 
@@ -63,4 +65,4 @@ class="d-flex flex-wrap align-items-center justify-content-center justify-conten
   </ul>
 </div>
 </div>
-`
+j`
