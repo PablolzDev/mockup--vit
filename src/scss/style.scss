@@ -1,2 +1,22 @@
  //Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+.chart-container {
+    @include flexbox(row); // Assuming you have a mixin for flexbox styles
+  
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chart-container canvas {
+    width: 300px; /* Adjust chart width as needed */
+    height: 300px; /* Adjust chart height as needed */
+    margin: 10px; /* Add spacing between charts */
+  }
+  
+  // Assuming you have a mixin for flexbox styles
+  @mixin flexbox($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+  }
+  

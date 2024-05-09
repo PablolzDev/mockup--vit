@@ -4,6 +4,7 @@ import '../scss/style.scss'
 
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
+import Chart from 'chart.js/auto';
 
 
 
@@ -66,3 +67,46 @@ class="d-flex flex-wrap align-items-center justify-content-center justify-conten
 </div>
 </div>
 `
+
+
+
+const data = {
+  labels: [
+    'Red',
+    'Blue',
+    'Yellow'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [300, 50, 100],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(54, 162, 235)',
+      'rgb(255, 205, 86)'
+    ],
+    hoverOffset: 4
+  }]
+};
+
+
+const config = {
+  type: 'doughnut',
+  data: data,
+  responsive: true
+};
+
+const config2 = {
+  type: 'doughnut',
+  data: data,
+};
+
+const config3 = {
+  type: 'doughnut',
+  data: data,
+};
+
+const myChart = new Chart(document.getElementById('myChart'), config);
+const myChart2 = new Chart(document.getElementById('chart2'), config2);
+const myChart3 = new Chart(document.getElementById('chart3'), config3);
+
+
